@@ -7,18 +7,13 @@ import Sidebar from './components/Sidebar';
 
 // Pages
 import Login from './pages/Login';
-<<<<<<< HEAD
-import Dashboard from './pages/Dashboard.jsx';
-=======
 import Dashboard from './pages/Dashboard';
->>>>>>> 1d48f48e2e39823c8e88aae47a8e413e700c9488
 import Customers from './pages/Customers';
 import Activities from './pages/Activities';
 import Opportunities from './pages/Opportunities';
 import Leads from './pages/Leads';
 import Campaigns from './pages/Campaigns';
 
-<<<<<<< HEAD
 import {
   SalesRepDashboard,
   SalesManagerDashboard,
@@ -28,9 +23,6 @@ import {
   ExecutiveDashboard,
 } from './pages/dashboard/index.js';
 
-
-=======
->>>>>>> 1d48f48e2e39823c8e88aae47a8e413e700c9488
 const AppContent = () => {
   const { isAuthenticated } = useAuth();
 
@@ -51,15 +43,13 @@ const AppContent = () => {
                 <main className="flex-1 overflow-auto">
                   <Routes>
                     <Route path="/dashboard" element={<Dashboard />} />
-<<<<<<< HEAD
                     <Route path="/dashboard/sales-rep" element={<SalesRepDashboard />} />
                     <Route path="/dashboard/sales-manager" element={<SalesManagerDashboard />} />
                     <Route path="/dashboard/account-manager" element={<AccountManagerDashboard />} />
                     <Route path="/dashboard/marketing" element={<MarketingDashboard />} />
                     <Route path="/dashboard/product" element={<ProductManagerDashboard />} />
                     <Route path="/dashboard/executive" element={<ExecutiveDashboard />} />
-=======
->>>>>>> 1d48f48e2e39823c8e88aae47a8e413e700c9488
+
                     <Route path="/customers" element={<Customers />} />
                     <Route path="/activities" element={<Activities />} />
                     <Route path="/opportunities" element={<Opportunities />} />
@@ -88,3 +78,4 @@ function App() {
 }
 
 export default App;
+

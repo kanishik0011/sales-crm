@@ -37,12 +37,9 @@ const login = async (req, res) => {
         role: user.role,
       },
       process.env.JWT_SECRET,
-<<<<<<< HEAD
       { expiresIn: process.env.JWT_EXPIRE || '24h' }
-=======
-      { expiresIn: process.env.JWT_EXPIRE }
->>>>>>> 1d48f48e2e39823c8e88aae47a8e413e700c9488
     );
+
 
     user.lastLogin = new Date();
     await user.save();

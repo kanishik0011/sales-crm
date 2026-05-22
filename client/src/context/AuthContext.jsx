@@ -8,11 +8,9 @@ export const AuthProvider = ({ children }) => {
   const [token, setToken] = useState(localStorage.getItem('token'));
   const [loading, setLoading] = useState(true);
 
-<<<<<<< HEAD
-  const API_URL = import.meta.env.VITE_API_URL || '/api';
-=======
   const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
->>>>>>> 1d48f48e2e39823c8e88aae47a8e413e700c9488
+
+
 
   // Set default authorization header
   if (token) {
