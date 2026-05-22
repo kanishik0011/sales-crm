@@ -10,42 +10,66 @@ const Sidebar = () => {
 
   const roleMenus = {
     'Sales Representative': [
+<<<<<<< HEAD
       { label: 'Dashboard', icon: BarChart3, path: '/dashboard/sales-rep' },
+=======
+      { label: 'Dashboard', icon: BarChart3, path: '/dashboard' },
+>>>>>>> 1d48f48e2e39823c8e88aae47a8e413e700c9488
       { label: 'Customers', icon: Users, path: '/customers' },
       { label: 'Activities', icon: Calendar, path: '/activities' },
       { label: 'Opportunities', icon: Target, path: '/opportunities' },
       { label: 'Performance', icon: Zap, path: '/performance' },
     ],
     'Sales Manager': [
+<<<<<<< HEAD
       { label: 'Dashboard', icon: BarChart3, path: '/dashboard/sales-manager' },
+=======
+      { label: 'Dashboard', icon: BarChart3, path: '/dashboard' },
+>>>>>>> 1d48f48e2e39823c8e88aae47a8e413e700c9488
       { label: 'Team Performance', icon: Users, path: '/team-performance' },
       { label: 'Territory', icon: Briefcase, path: '/territory' },
       { label: 'Leads', icon: Target, path: '/leads' },
       { label: 'Forecasts', icon: BarChart3, path: '/forecasts' },
     ],
     'Account Manager': [
+<<<<<<< HEAD
       { label: 'Dashboard', icon: BarChart3, path: '/dashboard/account-manager' },
+=======
+      { label: 'Dashboard', icon: BarChart3, path: '/dashboard' },
+>>>>>>> 1d48f48e2e39823c8e88aae47a8e413e700c9488
       { label: 'Customers', icon: Users, path: '/customers' },
       { label: 'Account Plans', icon: Briefcase, path: '/account-plans' },
       { label: 'Renewals', icon: Calendar, path: '/renewals' },
       { label: 'Satisfaction', icon: Zap, path: '/satisfaction' },
     ],
     'Marketing Team': [
+<<<<<<< HEAD
       { label: 'Dashboard', icon: BarChart3, path: '/dashboard/marketing' },
+=======
+      { label: 'Dashboard', icon: BarChart3, path: '/dashboard' },
+>>>>>>> 1d48f48e2e39823c8e88aae47a8e413e700c9488
       { label: 'Campaigns', icon: Target, path: '/campaigns' },
       { label: 'Leads', icon: Users, path: '/leads' },
       { label: 'Analytics', icon: BarChart3, path: '/analytics' },
       { label: 'Content', icon: Briefcase, path: '/content' },
     ],
     'Product Manager': [
+<<<<<<< HEAD
       { label: 'Dashboard', icon: BarChart3, path: '/dashboard/product' },
+=======
+      { label: 'Dashboard', icon: BarChart3, path: '/dashboard' },
+>>>>>>> 1d48f48e2e39823c8e88aae47a8e413e700c9488
       { label: 'Products', icon: Briefcase, path: '/products' },
       { label: 'Roadmap', icon: Calendar, path: '/roadmap' },
       { label: 'Feedback', icon: Users, path: '/feedback' },
       { label: 'Features', icon: Zap, path: '/features' },
     ],
     'Executive Leadership': [
+<<<<<<< HEAD
       { label: 'Dashboard', icon: BarChart3, path: '/dashboard/executive' },
+=======
+      { label: 'Dashboard', icon: BarChart3, path: '/dashboard' },
+>>>>>>> 1d48f48e2e39823c8e88aae47a8e413e700c9488
       { label: 'Revenue Analytics', icon: BarChart3, path: '/revenue' },
       { label: 'KPIs', icon: Target, path: '/kpis' },
       { label: 'Regional Performance', icon: Users, path: '/regional' },

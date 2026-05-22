@@ -18,6 +18,7 @@ const Login = () => {
 
     const result = await login(email, password);
     if (result.success) {
+<<<<<<< HEAD
       const role = result.data?.user?.role || result.data?.user?.role || null;
       const roleRedirectMap = {
         'Sales Representative': '/dashboard/sales-rep',
@@ -28,6 +29,9 @@ const Login = () => {
         'Executive Leadership': '/dashboard/executive',
       };
       navigate(roleRedirectMap[role] || '/dashboard');
+=======
+      navigate('/dashboard');
+>>>>>>> 1d48f48e2e39823c8e88aae47a8e413e700c9488
     } else {
       setError(result.message);
     }
