@@ -93,6 +93,33 @@ SalesManagementCRM/
    npm run dev
    ```
 
+## GitHub Actions Deployment
+
+This repository now includes a GitHub Actions workflow in `.github/workflows/ci.yml` that:
+
+- installs and validates the backend
+- installs and builds the frontend
+- triggers a Render redeploy when Render secrets are configured
+- deploys the frontend to Vercel when Vercel secrets are configured
+
+### Required GitHub secrets for auto deploy
+
+Set these secrets in your GitHub repository settings:
+
+- `RENDER_API_KEY`
+- `RENDER_SERVICE_ID`
+- `VERCEL_TOKEN`
+
+### Optional Vercel setup
+
+If your project is already connected to Vercel, the workflow will run:
+
+```bash
+npx vercel --prod --token "$VERCEL_TOKEN" --confirm
+```
+
+> If you do not use Vercel, the workflow will still run CI and skip the Vercel deployment step.
+
 4. **Seed Database (Optional)**
    ```bash
    cd server
