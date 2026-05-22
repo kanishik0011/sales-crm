@@ -9,6 +9,10 @@ import Sidebar from './components/Sidebar';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import Customers from './pages/Customers';
+import Activities from './pages/Activities';
+import Opportunities from './pages/Opportunities';
+import Leads from './pages/Leads';
+import Campaigns from './pages/Campaigns';
 
 const AppContent = () => {
   const { isAuthenticated } = useAuth();
@@ -31,6 +35,10 @@ const AppContent = () => {
                   <Routes>
                     <Route path="/dashboard" element={<Dashboard />} />
                     <Route path="/customers" element={<Customers />} />
+                    <Route path="/activities" element={<Activities />} />
+                    <Route path="/opportunities" element={<Opportunities />} />
+                    <Route path="/leads" element={<Leads />} />
+                    <Route path="/campaigns" element={<Campaigns />} />
                     <Route path="/" element={<Navigate to="/dashboard" />} />
                   </Routes>
                 </main>
