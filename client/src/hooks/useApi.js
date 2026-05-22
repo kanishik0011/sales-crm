@@ -1,12 +1,9 @@
 import axios from 'axios';
-<<<<<<< HEAD
-import { useAuth } from '@context/AuthContext';
-=======
-from '@context/AuthContext';
->>>>>>> 1d48f48e2e39823c8e88aae47a8e413e700c9488
+import { useAuth } from '../context/AuthContext';
 
 const useApi = () => {
   const { API_URL, token } = useAuth();
+
 
   const apiCall = async (method, endpoint, data = null) => {
     try {
@@ -42,3 +39,4 @@ const useApi = () => {
 };
 
 export default useApi;
+
