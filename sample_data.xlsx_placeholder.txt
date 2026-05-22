@@ -1,0 +1,8 @@
+PLACEHOLDER: sample_data.xlsx
+
+This environment cannot reliably generate a binary Excel file.
+
+Replace this placeholder with a real Excel file containing sheets:
+Customers, Sales, Leads, Campaigns, Revenue, Regions, TeamPerformance, ForecastData
+with 150–200 realistic CRM records.
+

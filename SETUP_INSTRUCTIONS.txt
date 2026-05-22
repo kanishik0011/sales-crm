@@ -1,0 +1,44 @@
+Sales CRM - Setup Instructions
+
+===============================
+Backend
+===============================
+1) Open a terminal in the repo root and run:
+   cd server
+   npm install
+   npm run seed
+   npm run dev
+
+Backend expected:
+- API base: http://localhost:5000/api
+- Health check: http://localhost:5000/health
+
+===============================
+Frontend
+===============================
+1) Open a second terminal in the repo root and run:
+   cd client
+   npm install
+   npm run dev
+
+Frontend expected:
+- Vite dev server URL shown in terminal (typically http://localhost:5173)
+
+===============================
+Login Credentials (seed)
+===============================
+Use these demo users (password: password123):
+
+- rep@example.com / password123
+- manager@example.com / password123
+- account@example.com / password123
+- marketing@example.com / password123
+- product@example.com / password123
+- executive@example.com / password123
+
+===============================
+Notes
+===============================
+- Ensure MongoDB is running and server/.env contains a valid MONGODB_URI.
+- If port 5000 is occupied (EADDRINUSE), stop the process using it or change PORT in server/.env.
+
