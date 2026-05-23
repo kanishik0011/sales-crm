@@ -4,7 +4,7 @@ import { useAuth } from '../context/AuthContext';
 const useApi = () => {
   const { API_URL, token } = useAuth();
 
-
+  // endpoint should start with "/" (e.g. "/customers")
   const apiCall = async (method, endpoint, data = null) => {
     try {
       const config = {
